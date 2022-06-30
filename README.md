@@ -1,70 +1,31 @@
 # Search Functionality | Smallcase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a frontend assessment for intern position given by Smallcase.
+Search Functionality is basically a react app embedded with automatic seach feature as the user types his query in the search box. 
+It displays the search results in a paginated view with 5 results per page. 
 
-## Available Scripts
+Tech Stacks used :- 
+1) React.js
+2) Create React app
+3) Bootstrap Library
+4) Axios
+5) The API used here is google search v3 API that I subscribed from the RapidAPI website (the Basic (free) plan).
+6) Apart from that I used some npm packages, which are :- 
+   a) localstorage-ttl npm package for cacheing the search results for some time.
+   b) Framer motion package for some animations on the page. 
 
-In the project directory, you can run:
+Features of Search Functionality app :- 
+1) Embedded with search function. 
+2) Paginated result view, 5 responses per page.
+3) Load More button to load the next set of result. 
+4) Search happens automatically as the user types. 
 
-### `npm start`
+For API usage optimization, following things are done :- 
+1) Search results are begin cached for some time (here, 60 sec, can be increased or decreased if needed) so as to minimize the number of API calls.
+2) The Search happens only after user has typed in atleast 3 letters. 
+3) The code is written to wait for some time for the user to finish typing (here, 3 sec, can be increased or decreased if needed) so as to avoid sending api calls for intermediate states. 
+4) The Code also handles the order in which the queries are sent so that the UI is stable and consistent.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Due to the time contraints I was not able to give a lot of attention to the CSS part but I tried making it smooth and polished and also tried to design it in some  accordance with the smallcase website. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The Website is hosted on Netlify and the link to the hosted website is added in the description section. 
