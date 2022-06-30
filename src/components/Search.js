@@ -86,7 +86,7 @@ export class Search extends Component {
           console.error(error);
         });
 
-      }, 2000);
+      }, 3000);
     }
   }
 
