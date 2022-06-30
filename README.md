@@ -28,4 +28,4 @@ It displays the search results in a paginated view with 5 results per page.
 
 #### Due to the time contraints I was not able to give a lot of attention to the CSS part but I tried making it smooth and polished and also tried to design it in some  accordance with the smallcase website. 
 
-#### The Website is hosted on Netlify and the link to the hosted website is added in the description section. 
+#### The Website is hosted on Netlify and the link to the hosted website is added in the About section. 
