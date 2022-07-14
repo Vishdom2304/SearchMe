@@ -1,4 +1,4 @@
-# Search Functionality | Smallcase
+# Search Functionality
 
 Search Functionality is basically a react app embedded with automatic seach feature as the user types his query in the search box. 
 It displays the search results in a paginated view with 5 results per page. 
